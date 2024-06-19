@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto-index{
+    font-size:larger;
+    font-family:'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.position{
+    padding: 50px;
+    float: right
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    display: none;
+    background-color: #000;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    transition: background-color 0.5s;
+    border-radius: 30px
+}
+
+.btn:hover {
+    background: #000000;
+}
+
+.header {
+    background: radial-gradient(#757575, #000000);
+}
+
+.header .row {
+    margin-top: 0px;
+
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+
+
+.small-container {
+    max-width: 1800px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+    font-size:xx-large;
+}
+
+h5{
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+    font-size:xx-large;
+}
+
+.title::after {
+    content: '';
+    background: #000000;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.col-4:hover {
+    transform: translate(-10px);
+
+}
+
+
+/*-------------------Goat-------------*/
+
+
+.offer {
+    background-image: url(./images/bckg\ idolos.png);
+    background-size: cover;
+    padding: 12%;
+}
+
+h6{
+    text-align: center;
+    position: relative;
+    line-height: 100px;
+    color: #000000;
+    font-size:50px;
+}
+
+
+/*----------------------- campeonatos -----------------------------*/
+
+.campeonatos {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0%);
+}
+
+
+/*-------------------------------------------footer--------------------------*/
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+
+.img {
+   height: 200px;
+
+}
+
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------------------------- media for menu------------------ */
+
+@media only screen and (max-width: 800px) {
+
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+/*----------------------- less 600 TAMANHO TELA---*/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+
+    .single-product {
+        text-align: left;
+    }
+
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .contato-body
+{
+ background-color:#e2e2e2;
+}
+
+.contato-body
+{
+ background-color:#e2e2e2;
+}
+.content{display: flex; justify-content: center;}
+.contato{width: 100%; max-width: 500px;}
+.form{display: flex; flex-direction: column;}
+.field{padding: 10px; margin-bottom: 15px; border: 1px;}
+textarea{height: 150px;}
+.fundo{
+    background-color: #616161;
+    border-radius: 5px;
+    text-align: justify;
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position: center;
+}
+p{
+    text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+
+.contato-body
+{
+ background-color:#e2e2e2;
+}
+.content{display: flex; justify-content: center;}
+.contato{width: 100%; max-width: 500px;}
+.form{display: flex; flex-direction: column;}
+.field{padding: 10px; margin-bottom: 15px; border: 1px;}
+textarea{height: 150px;}
+.fundo{
+    background-color: #616161;
+    border-radius: 5px;
+    text-align: justify;
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position: center;
+}
+p{
+    text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+
+}
+
+/*--------------------------detalhes time-------------*/ 
+
+.cart-info p {
+    display: none;
+}
+
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+
+.single-product h4 {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+/*----------------------------account items-----------------*/
+
+.account-page {
+    padding: 50px auto 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block
+}
+
+.form-btn {
+    display: inline-block;
+}   
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+/*------------------btnregister-----------------*/
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+/*------------------basquete-----------------*/
+.basquete-body
+{
+ background-image: url(./images/18696103-fundo-de-de-quadra-de-basquete-esporte-sem-pessoas-vetor.png);
+ 
+}
+
+.faixa-cima{
+    background: radial-gradient(#333333, #000000);
+}
+.campeonatos {
+    margin: 100px auto;
+}
+
+.col-6 {
+    width: 160px;
+}
+
+.col-6 img {
+    width: 100%;
+    cursor: pointer;
+    filter:brightness(0);
+}
+
+.col-6 img:hover {
+    filter: grayscale(0%);
+}
+
+/*------------------futebol-----------------*/
+.futebol-body
+{
+ background-image: url(./images/futebol\ fundo.png);
+ background-repeat: no-repeat;
+ 
+}
+
+.faixa-cima{
+    background: radial-gradient(#333333, #000000);
+}
+.campeonatos {
+    margin: 100px auto;
+}
+
+.col-6 {
+    width: 160px;
+}
+
+.col-6 img {
+    width: 100%;
+    cursor: pointer;
+    filter:brightness(0);
+}
+
+.col-6 img:hover {
+    filter: grayscale(0%);
+}
+
+.logo-botao .btn{
+        margin-left: 1%;
+        margin-top: 1%;
+        display: inline-block;
+        padding: 30px 30px;
+        transition: background-color 0.5s;
+        background-image: url(./images/voltar.png);
+        background-repeat: no-repeat;
+}
+
+.logo-botao .img1 {
+    display: block;
+    margin-left: 710px;
+    margin-right: auto;
+}
+
+/*------------------goats-----------------*/
+.goat-body
+{
+ background-color:#e2e2e2;
+}
+
+.faixa-cima{
+    background: radial-gradient(#333333, #000000);
+}
+.campeonatos {
+    margin: 100px auto;
+}
+
+.col-6 {
+    width: 160px;
+}
+
+.col-6 img {
+    width: 100%;
+    cursor: pointer;
+    filter:brightness(0);
+}
+
+.col-6 img:hover {
+    filter: grayscale(0%);
+}
+
+.logo-botao .btn1{
+        margin-left: 1%;
+        margin-top: 1%;
+        display: inline-block;
+        padding: 30px 30px;
+        transition: background-color 0.5s;
+        background-image: url(./images/voltar.png);
+        background-repeat: no-repeat;
+}
+
+.logo-botao .img1 {
+    display: block;
+    margin-left: 710px;
+    margin-right: auto;
+}
+
+/*------contato---------*/
+.contato-body
+{
+ background-color:#e2e2e2;
+}
+.content{display: flex; justify-content: center;}
+.contato{width: 100%; max-width: 500px;}
+.form{display: flex; flex-direction: column;}
+.field{padding: 10px; margin-bottom: 15px; border: 1px;}
+textarea{height: 150px;}
+.fundo{
+    background-color: #616161;
+    border-radius: 5px;
+    text-align: justify;
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position: center;
+}
+p{
+    text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
